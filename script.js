@@ -58,14 +58,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const tempEl = document.getElementById("t4-temp");
   const humEl  = document.getElementById("t4-hum");
   const windEl = document.getElementById("t4-wind");
-  const errEl  = document.getElementById("t4-err"); // عنصر الخطأ حسب الـHTML
+  const errEl  = document.getElementById("t4-err"); 
 
   if (wxBtn) {
     wxBtn.addEventListener("click", function () {
       const base  = "https://api.openweathermap.org/data/2.5/weather";
       const city  = "Dammam";
       const units = "metric";
-      const key   = "d51f2f00c3b137ccfd135bd8f9dd50aa"; // ← ضعي مفتاحك هنا
+      const key   = "d51f2f00c3b137ccfd135bd8f9dd50aa"; 
 
       const url = `${base}?q=${encodeURIComponent(city)}&appid=${key}&units=${units}`;
 
